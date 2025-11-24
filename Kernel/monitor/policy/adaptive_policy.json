@@ -1,0 +1,14 @@
+{
+"policy_name": "default_adaptive_policy",
+"version": "1.0.0",
+"rules": [
+{ "trigger": "risk > 0.9",  "action": { "set_mode": "emergency", "max_speed_pct": 0.2 } },
+{ "trigger": "risk > 0.7",  "action": { "set_mode": "safe", "max_speed_pct": 0.4 } },
+{ "trigger": "risk > 0.4",  "action": { "set_mode": "degraded", "max_speed_pct": 0.6 } },
+{ "trigger": "risk <= 0.4", "action": { "set_mode": "normal", "max_speed_pct": 0.9 } }
+],
+"stability": {
+"min_epoch_seconds": 30,
+"max_adj_factor": 0.2
+}
+}
