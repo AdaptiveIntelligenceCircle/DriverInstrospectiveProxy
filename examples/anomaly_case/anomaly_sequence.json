@@ -1,0 +1,25 @@
+{
+  "sequence": [
+    {
+      "wheel_speed": 32.1,
+      "lidar": 12.5,
+      "imu": 0.05
+    },
+    {
+      "wheel_speed": 33.0,
+      "lidar": 12.4,
+      "imu": 0.04
+    },
+    {
+      "wheel_speed": 120.0,
+      "lidar": 2.0,
+      "imu": 0.10,
+      "corrupted": true
+    },
+    {
+      "wheel_speed": 31.9,
+      "lidar": 12.7,
+      "imu": 0.05
+    }
+  ]
+}

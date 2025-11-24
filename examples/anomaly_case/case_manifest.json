@@ -1,0 +1,11 @@
+{
+  "name": "anomaly_case",
+  "version": "1.0.0",
+  "expected_models": [
+    "anomaly.meta.json",
+    "risk_model.meta.json"
+  ],
+  "safety_level": "critical",
+  "rollback_policy": "immediate",
+  "logging": true
+}

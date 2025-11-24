@@ -1,0 +1,14 @@
+{
+  "packet_id": 42,
+  "timestamp": 1730732301,
+  "sensor": {
+    "wheel_speed": 120.0,
+    "lidar_distance": 2.0,
+    "imu_yaw_rate": 0.1
+  },
+  "expected_normal_range": {
+    "wheel_speed": [0, 40],
+    "lidar_distance": [0.5, 80],
+    "imu_yaw_rate": [-2, 2]
+  }
+}
