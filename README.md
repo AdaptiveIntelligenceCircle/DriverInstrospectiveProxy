@@ -2,7 +2,9 @@
 
 **DriverInstrospectiveProxy** is an experimental project that explores the integration of AI into the kernel/driver space—where introspection, real-time responsiveness, and low-level security are critical.
 
-<img width="512" height="512" alt="image" src="https://copilot.microsoft.com/th/id/BCO.2d33bbc1-a97e-4493-893b-614daf96cbf5.png"/>
+<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/a6169fcb-dd2d-4861-85a4-bd0d4057439e" />
+
+
 
 ## 🚀 Purpose
 
@@ -65,6 +67,11 @@ DriverInstropectiveProxy/
 - OS with driver-level hook support (Linux kernel module, Windows WDM/UMDF)
 - Compiler: GCC/Clang or MSVC
 - Python (optional, for AI daemon support)
+
+## 🧬 Related Projects
+- Adaptive OS : https://github.com/CodelikeC/AdaptiveOS
+
+- AIForDriver : https://github.com/CodelikeC/AIForDriver
 
 ## Badges 
 
