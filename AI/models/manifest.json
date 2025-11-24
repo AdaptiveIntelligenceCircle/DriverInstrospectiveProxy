@@ -1,0 +1,14 @@
+{
+  "name": "driver_introspective_proxy.ai.models",
+  "version": "1.0.0",
+  "dependencies": [],
+  "type": "ai_model_bundle",
+  "load_at_runtime": true,
+  "models": [
+    "metadata/risk_model.meta.json",
+    "metadata/behavior_model.meta.json",
+    "metadata/anomaly.meta.json",
+    "metadata/temporal.meta.json",
+    "metadata/fusion.meta.json"
+  ]
+}
