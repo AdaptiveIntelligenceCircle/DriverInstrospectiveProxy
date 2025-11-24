@@ -1,0 +1,11 @@
+policy:
+  max_risk_output: 0.95
+  require_signed_metadata: true
+  require_catalog_entry: true
+  reject_on_checksum_mismatch: true
+  fail_safe_on_model_load_fail: true
+
+fallback:
+  enable_runtime_slowdown: true
+  enable_soft_braking: true
+  enable_input_clamping: true
