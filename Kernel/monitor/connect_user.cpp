@@ -2,9 +2,9 @@
 #include <iostream>
 using namespace std;
 
-namespace dip :: behavior
+namespace dip::behavior
 {
-    void ConnectUser :: on_user_command(UserCallback cb)
+    void ConnectUser::on_user_command(UserCallback cb)
     {
         cb_ = std::move(cb);
     }
