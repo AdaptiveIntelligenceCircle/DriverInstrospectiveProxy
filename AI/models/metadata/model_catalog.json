@@ -1,0 +1,15 @@
+{
+  "catalog_version": "1.0.0",
+  "allowed_models": [
+    "risk_model.meta.json",
+    "behavior_model.meta.json",
+    "anomaly.meta.json",
+    "temporal.meta.json",
+    "fusion.meta.json"
+  ],
+  "disallowed_models": [],
+  "governance": {
+    "enforce_strict_version": true,
+    "allow_runtime_updates": false
+  }
+}

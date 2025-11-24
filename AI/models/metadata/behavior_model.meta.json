@@ -1,0 +1,14 @@
+{
+  "name": "driver_behavior_model",
+  "version": "1.0.0",
+  "model_type": "behavior",
+  "checksum": "sha256:f00291ca29e8bb41fe998aab3390cd9f",
+  "weights_path": "AI/Models/weights/behavior.bin",
+  "input_dim": 8,
+  "output_dim": 4,
+  "tags": ["behavior", "driver", "profiling"],
+  "constraints": {
+    "max_inference_ms": 2.5,
+    "max_memory_mb": 6
+  }
+}

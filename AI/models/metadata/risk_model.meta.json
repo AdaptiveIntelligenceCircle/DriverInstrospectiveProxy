@@ -1,0 +1,14 @@
+{
+  "name": "introspective_risk_model",
+  "version": "1.0.0",
+  "model_type": "risk",
+  "checksum": "sha256:3f99a2c4cf0e3bb9721bd8f5a123d824",
+  "weights_path": "AI/Models/weights/risk.bin",
+  "input_dim": 12,
+  "output_dim": 1,
+  "tags": ["safety", "risk-estimation", "core"],
+  "constraints": {
+    "max_inference_ms": 2.0,
+    "max_memory_mb": 5
+  }
+}

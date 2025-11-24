@@ -1,0 +1,14 @@
+{
+  "name": "anomaly_detector",
+  "version": "1.0.0",
+  "model_type": "anomaly",
+  "checksum": "sha256:99f34abdddcd12589721eead8c772001",
+  "weights_path": "AI/Models/weights/anomaly.bin",
+  "input_dim": 16,
+  "output_dim": 1,
+  "tags": ["safety", "anomaly", "monitor"],
+  "constraints": {
+    "max_inference_ms": 1.0,
+    "max_memory_mb": 3
+  }
+}

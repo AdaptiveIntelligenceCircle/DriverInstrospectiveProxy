@@ -1,0 +1,14 @@
+{
+  "name": "temporal_predictor",
+  "version": "1.0.0",
+  "model_type": "temporal",
+  "checksum": "sha256:39484abddb901bb38933eeaaab190bc1",
+  "weights_path": "AI/Models/weights/temporal.bin",
+  "input_dim": 6,
+  "output_dim": 1,
+  "tags": ["time", "temporal", "prediction"],
+  "constraints": {
+    "max_inference_ms": 1.5,
+    "max_memory_mb": 4
+  }
+}

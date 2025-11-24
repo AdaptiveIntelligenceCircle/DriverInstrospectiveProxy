@@ -1,0 +1,14 @@
+{
+  "name": "fusion_model",
+  "version": "1.0.0",
+  "model_type": "fusion",
+  "checksum": "sha256:aaa24ccaa2dd0a09cb33bd1c91fc008a",
+  "weights_path": "AI/Models/weights/fusion.bin",
+  "input_dim": 12,
+  "output_dim": 12,
+  "tags": ["fusion", "aggregator", "udsv"],
+  "constraints": {
+    "max_inference_ms": 3.0,
+    "max_memory_mb": 8
+  }
+}
