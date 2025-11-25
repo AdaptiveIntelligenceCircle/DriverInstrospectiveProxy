@@ -6,6 +6,12 @@ using namespace std;
 
 namespace dip :: behavior
 {
+    void IntrospectiveRiskMonitor :: feed_features(const vector<double> &features)
+    {
+        state_ = state_; 
+        bus_ = bus_; 
+    }
+
     void IntrospectiveRiskMonitor :: bind(BehaviorState *state, BehaviorBus *bus)
     {
         state_ = state; 
