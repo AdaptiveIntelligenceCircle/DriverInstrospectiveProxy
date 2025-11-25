@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "DIP Manifest",
+  "type": "object",
+  "properties": {
+    "name": { "type": "string" },
+    "version": { "type": "string" },
+    "entry": { "type": "string" },
+    "type": { "type": "string" },
+    "checksum": { "type": "string" },
+    "signature": { "type": "object",
+      "properties": {
+        "alg": {"type":"string"},
+        "sig": {"type":"string"}
+      },
+      "required":["alg","sig"]
+    },
+    "permissions": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "required": ["name","version","entry","checksum"]
+}

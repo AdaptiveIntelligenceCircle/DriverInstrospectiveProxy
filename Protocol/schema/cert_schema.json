@@ -1,0 +1,11 @@
+{
+  "type": "object",
+  "properties": {
+    "subject": {"type":"string"},
+    "issuer": {"type":"string"},
+    "not_before": {"type":"string"},
+    "not_after": {"type":"string"},
+    "fingerprint": {"type":"string"}
+  },
+  "required": ["subject","issuer","fingerprint"]
+}
