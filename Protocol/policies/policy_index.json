@@ -1,0 +1,5 @@
+{
+  "active": "default_policy.json",
+  "fallback": "secure_policy.json",
+  "hard_rules": "hard_rules.json"
+}

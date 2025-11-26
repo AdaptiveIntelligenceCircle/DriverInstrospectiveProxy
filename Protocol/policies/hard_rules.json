@@ -1,0 +1,25 @@
+{
+  "hard_rules_version": "1.0.0",
+  "rules": [
+    {
+      "id": "HR-001",
+      "description": "User override is disabled when risk >= critical threshold.",
+      "cannot_override": true
+    },
+    {
+      "id": "HR-002",
+      "description": "Kernel cannot execute direct control commands without behavior_engine approval.",
+      "cannot_override": true
+    },
+    {
+      "id": "HR-003",
+      "description": "Self-defense guard can always engage rollback.",
+      "cannot_override": true
+    },
+    {
+      "id": "HR-004",
+      "description": "Unsigned plugin or model must be denied.",
+      "cannot_override": true
+    }
+  ]
+}
