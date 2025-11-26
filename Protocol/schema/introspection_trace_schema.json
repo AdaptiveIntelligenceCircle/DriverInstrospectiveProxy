@@ -1,0 +1,12 @@
+{
+  "title": "Introspection Trace Schema",
+  "type": "object",
+  "properties": {
+    "timestamp": { "type": "integer" },
+    "source_module": { "type": "string" },
+    "state_before": { "type": "object" },
+    "state_after": { "type": "object" },
+    "context": { "type": "object" }
+  },
+  "required": ["timestamp", "source_module", "state_before", "state_after"]
+}

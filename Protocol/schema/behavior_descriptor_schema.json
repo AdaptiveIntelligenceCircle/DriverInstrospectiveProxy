@@ -1,0 +1,24 @@
+{
+  "title": "Behavior descriptor Schema",
+  "type": "object",
+  "properties": {
+    "contract_version": { "type": "string" },
+    "states": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "transitions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "from": { "type": "string" },
+          "to": { "type": "string" },
+          "condition": { "type": "string" }
+        },
+        "required": ["from", "to", "condition"]
+      }
+    }
+  },
+  "required": ["contract_version", "states", "transitions"]
+}

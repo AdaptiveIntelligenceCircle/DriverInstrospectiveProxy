@@ -1,0 +1,20 @@
+{
+  "title": "Plugin Descriptor",
+  "type": "object",
+  "properties": {
+    "plugin_name": { "type": "string" },
+    "version": { "type": "string" },
+    "language": { "type": "string" },
+    "entry_point": { "type": "string" },
+    "type": {
+      "type": "string",
+      "enum": ["perception", "slm_remote", "robotic_adapter", "sensor_stream", "behavior", "introspection"]
+    },
+    "capabilities": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "manifest": { "type": "string" }
+  },
+  "required": ["plugin_name", "version", "entry_point", "type"]
+}

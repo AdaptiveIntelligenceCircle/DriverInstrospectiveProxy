@@ -1,0 +1,21 @@
+{
+  "title": "AI Model Metadata",
+  "type": "object",
+  "properties": {
+    "model_name": { "type": "string" },
+    "version": { "type": "string" },
+    "input_size": { "type": "integer" },
+    "output_size": { "type": "integer" },
+    "weights_file": { "type": "string" },
+    "checksum": { "type": "string" },
+    "constraints": {
+      "type": "object",
+      "properties": {
+        "max_inference_ms": { "type": "number" },
+        "max_memory_mb": { "type": "number" }
+      }
+    }
+  },
+  "required": ["model_name", "version", "input_size", "output_size", "weights_file"]
+}
+

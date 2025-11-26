@@ -1,0 +1,20 @@
+{
+  "title": "Risk Model Schema",
+  "type": "object",
+  "properties": {
+    "model_name": { "type": "string" },
+    "risk_levels": {
+      "type": "object",
+      "properties": {
+        "safe": { "type": "number" },
+        "warning": { "type": "number" },
+        "critical": { "type": "number" }
+      }
+    },
+    "features": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "required": ["model_name", "risk_levels"]
+}

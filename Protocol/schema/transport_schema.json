@@ -1,0 +1,23 @@
+{
+  "title": "Transport Schema",
+  "type": "object",
+  "properties": {
+    "channels": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "type": {
+            "type": "string",
+            "enum": ["tcp", "udp", "ipc", "serial"]
+          },
+          "endpoint": { "type": "string" },
+          "secure": { "type": "boolean" }
+        },
+        "required": ["name", "type", "endpoint"]
+      }
+    }
+  },
+  "required": ["channels"]
+}

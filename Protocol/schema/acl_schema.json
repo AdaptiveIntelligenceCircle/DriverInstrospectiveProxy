@@ -1,0 +1,15 @@
+{
+  "title": "ACL Schema",
+  "type": "object",
+  "properties": {
+    "allowed_sources": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "denied_sources": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "required": ["allowed_sources"]
+}
