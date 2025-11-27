@@ -1,0 +1,27 @@
+{
+  "cert_version": "1.0",
+  "subject": {
+    "name": "Adaptive Intelligence Circle",
+    "type": "driver_component",
+    "component": "proxy-core"
+  },
+  "issuer": {
+    "name": "AIC Internal Root CA",
+    "certificate_id": "AIC-ROOT-2025"
+  },
+  "validity": {
+    "not_before": "2025-01-01T00:00:00Z",
+    "not_after": "2030-01-01T00:00:00Z"
+  },
+  "fingerprint": {
+    "sha256": "abcd1234deadbeef5678abcd0000fff444222111999aaa333ccc222eee111ff"
+  },
+  "metadata": {
+    "purpose": "DIP handshake validation",
+    "allowed_usage": [
+      "session_key_exchange",
+      "signature_validation",
+      "secure_channel_init"
+    ]
+  }
+}

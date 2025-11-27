@@ -1,0 +1,49 @@
+{
+  "acl_version": "1.0",
+  "description": "Sample Access Control List for DIP protocol testing",
+  "rules": [
+    {
+      "id": "ACL-001",
+      "subject": "driver.core",
+      "permissions": ["read", "write", "telemetry"],
+      "resource": "proxy.session",
+      "conditions": {
+        "time": "always",
+        "min_security_level": 1
+      }
+    },
+    {
+      "id": "ACL-002",
+      "subject": "driver.security",
+      "permissions": ["verify", "sign", "exchange_key"],
+      "resource": "proxy.crypto",
+      "conditions": {
+        "requires_certificate": true,
+        "min_security_level": 2
+      }
+    },
+    {
+      "id": "ACL-003",
+      "subject": "module.analytics",
+      "permissions": ["read"],
+      "resource": "driver.telemetry",
+      "conditions": {
+        "rate_limit": "100 req/min"
+      }
+    },
+    {
+      "id": "ACL-004",
+      "subject": "remote.node",
+      "permissions": ["send"],
+      "resource": "proxy.buffer",
+      "conditions": {
+        "signature_valid": true
+      }
+    }
+  ],
+  "defaults": {
+    "deny_if_not_listed": true,
+    "deny_unsigned_packets": true,
+    "deny_unknown_resources": true
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "manifest_version": "1.0",
+  "name": "AIC-DIP-Demo-Module",
+  "description": "Demo module for Driver Introspective Proxy protocol testing",
+  "author": "Adaptive Intelligence Circle",
+  "version": "0.1.0",
+  "entrypoint": "module_entry.lua",
+
+  "capabilities": {
+    "required_permissions": [
+      "read",
+      "telemetry",
+      "proxy_bind"
+    ],
+    "optional_permissions": [
+      "crypto",
+      "introspection"
+    ]
+  },
+
+  "signatures": {
+    "module_hash_sha256": "ffeeaa00112233445566778899aabbccddeeff00112233445566778899aaff00",
+    "signature": "MEUCIQDf3mkwc9d9qQHG33vFaw8893SSXXxyzz11223344UUZWJE7QIgbqsdf..."
+  },
+
+  "compatibility": {
+    "protocol_min": "1.0",
+    "protocol_max": "2.0",
+    "supported_environments": ["driver", "proxy", "simulation"]
+  },
+
+  "security": {
+    "requires_signed_payload": true,
+    "allow_dynamic_behavior": false,
+    "isolation_level": "medium"
+  }
+}
