@@ -36,7 +36,7 @@ Các script trong `examples/scripts/` không chỉ minh họa tính năng mà c�
 Bạn có thể chạy:
 
 ```lua
-lua.doFile("examples/scripts/driver_introspective_proxy.lua")
+lua.doFile("examples/scripts/driver_intro_proxy.lua")
 ```
 
 → Và quan sát DIP phản ứng ra sao.
