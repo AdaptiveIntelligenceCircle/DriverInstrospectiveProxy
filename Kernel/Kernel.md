@@ -432,7 +432,7 @@ Kernel/
 
 ## 11. Next Steps
 
-1. **Review & Feedback**: Đọc tài liệu này và các chi tiết trong `comm.md`, `hook.md`. Xác nhận scope và design fit với yêu cầu của bạn.
+1. **Review & Feedback**: Đọc tài liệu này và các chi tiết trong `comm.md`, `hook.md`. Xác nhận scope và design fit. 
 
 2. **Skeleton Code**: Tạo các file header & implement skeleton (empty functions with comments).
 
