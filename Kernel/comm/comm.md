@@ -269,6 +269,3 @@ File `comm.md` này cung cấp blueprint để triển khai module giao tiếp k
 
 - Tạo các file `comm.h`, `ctl_codes.h` vào thư mục tương ứng.
 - Thêm ví dụ thực tế dưới dạng file C trong repo và chạy build (Windows hoặc MinGW/Cygwin cho Linux-like testing).
-
-Bạn muốn mình tiếp tục tạo mã nguồn mẫu (các file `.c` / `.h`) trong repo không? Nếu có, chọn mục tiêu: `windows` hoặc `linux` hoặc cả hai.
-
