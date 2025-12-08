@@ -392,34 +392,35 @@ Kernel/
 ├── Kernel.md                 ← This file
 ├── comm/
 │   ├── comm.md
-│   ├── comm.h
-│   ├── comm.c
-│   ├── ctl_codes.h
-│   └── ioctl_defs.h
+│   ├── comm_channel.h
+│   ├── comm_protocol.c
+│   ├── comm_utils.h
+│   └── test_comm.c 
 ├── hook/
 │   ├── hook.md
-│   ├── hook.h
-│   ├── hook.c
+│   ├── driver_hook.h/syscall_hook.c
+│   ├── test_hook.c
 │   ├── hook_linux.c
 │   └── hook_windows.c
+|   |__ hook_manager.h/.c
 ├── message/
-│   ├── message.h
-│   └── message.c
+│   ├── comm_channel.h/.c
+│   └── comm_protocol.c/comm_utils.c
 ├── monitor/
-│   ├── monitor.h
-│   ├── monitor.c
-│   └── monitor_timer.c
+│   ├── drivers/
+│   ├── policy/
+│   └── .cpp/.h
 ├── core/
-│   ├── core.h
-│   ├── core.c
-│   ├── policy.c
-│   ├── core_linux.h
-│   └── core_windows.h
+│   ├── dip_init.c
+│   ├── event_dispatch.c
+│   ├── logging.c / build_module.bat
+│   ├── memory_manager.h
+│   └── unload_sip.sh/load_dip.bat
 ├── include/
-│   ├── dip.h
-│   ├── types.h
-│   ├── config.h
-│   └── debug.h
+│   ├── dip_common.h / dip_event.h
+│   ├── hook_manager.h
+│   ├── logging.h
+│   └── monitor.h
 └── tests/
     ├── test_ring_buffer.c
     ├── test_hook_register.c
