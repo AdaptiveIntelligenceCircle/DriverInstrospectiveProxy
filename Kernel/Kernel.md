@@ -325,19 +325,19 @@ Common abstraction layer in `core/`:
 ## 7. Implementation Roadmap
 
 ### Phase 1: Core Foundation
-- [ ] Implement `core/core.c` (module init/exit, ring buffer).
-- [ ] Implement `comm/` (character device, IOCTL handler).
-- [ ] Define `message.h` and `hook.h` structs.
+- [ ] Implement (module init/exit, ring buffer).
+- [ ] Implement (character device, IOCTL handler).
+- [ ] Define structs.
 
 ### Phase 2: Hook System
-- [ ] Implement `hook/hook.c` (registration, fast-path capture).
-- [ ] Platform-specific: `hook/hook_linux.c` + `hook/hook_windows.c`.
+- [ ] Implement (registration, fast-path capture).
+- [ ] Platform-specific.
 - [ ] Worker thread + event processing.
 
 ### Phase 3: Integration
 - [ ] Connect hook events → comm layer (send_event).
 - [ ] Implement userland request handlers in comm.
-- [ ] Add simple policy rules in `core/policy.c`.
+- [ ] Add simple policy rules.
 
 ### Phase 4: Monitoring & Polish
 - [ ] Implement `monitor/` (stats collection).
