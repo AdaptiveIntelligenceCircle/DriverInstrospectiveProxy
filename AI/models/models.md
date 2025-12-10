@@ -1,11 +1,7 @@
-Dưới đây là **models.md** — tài liệu chuẩn, rõ ràng, súc tích, mô tả đầy đủ chức năng của folder **models/** trong Driver Introspective Proxy (DIP).
-Bạn có thể đưa trực tiếp vào repo: `models/models.md`.
-
----
-
 # **Driver Introspective Proxy — Models Layer**
 
 **Location:** `models/`
+
 **Purpose:** Chứa toàn bộ **mô hình dữ liệu cốt lõi (core data models)** được sử dụng trong tất cả các thành phần của Driver Introspective Proxy.
 Models đóng vai trò là “ngôn ngữ chung” giúp các module giao tiếp với nhau một cách ổn định, rõ ràng và type-safe.
 
